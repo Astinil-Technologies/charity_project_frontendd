@@ -1,0 +1,76 @@
+/* Flexbox for horizontal alignment */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 16px 32px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fix Logo */
+  .logo img {
+    height: 50px; /* Adjust size */
+    width: 150px;
+  }
+  
+  /* Horizontal navigation */
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #2c7a7b;
+  }
+  
+  /* Action Buttons */
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .donate-btn, .sponsor-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .donate-btn {
+    background: #0057b7;
+  }
+  
+  .sponsor-btn {
+    background: #4caf50;
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .buttons {
+      margin-top: 10px;
+    }
+  }
+  
